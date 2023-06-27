@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner in = new Scanner (System.in);
+        float a,b,c;
+        a=in.nextFloat();
+        b=in.nextFloat();
+        c=in.nextFloat();
+        if((a+b >c) && (b+c>a) && (c+a>b) )
+        {
+            float Perimetro = a+b+c;
+            System.out.printf("Perimetro = %.1f\n",Perimetro);
+        }
+        else 
+        {
+            float area =(a+b)/2*c;
+            System.out.printf("Area = %.1f\n",area);
+        }
+    }
+    
+}
