@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner in = new Scanner(System.in);
+        int start,end;
+        start=in.nextInt();
+        end=in.nextInt();
+        if(start==end)
+        {
+            System.out.println("O JOGO DUROU 24 HORA(S)");
+        }
+        else if(end >start )
+        {
+            int x = (end-start);
+            System.out.println("O JOGO DUROU "+x+" HORA(S)");
+        }
+        else if (start>end)
+                {
+                  int y= 24 - (start - end);
+                    System.out.println("O JOGO DUROU "+y+" HORA(S)");  
+                }
+        
+    }
+    
+}
